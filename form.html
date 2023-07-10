@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  autocomplete="off"  method="get"  method="post" action="">
+     <!-- method is an form tag methos is like path to send the data values of method of attribute is get and post
+     when method="get" .   the user entering data ,wiil be on the url oafter submitting the form.
+     get method accepts 2048 characters on the url,get method is not secure.
+     method="post"the user entering data will not be visible on the url after submitting thhe form.method="post"
+     accepts the N number of chatacters,post metho is secure. -->
+        <!-- novalidate is used in  form tag  only    -->
+        <!-- action is specify the URL -->
+        <fieldset>
+            <legend>JAVA APPLICATION</legend>
+
+    <label for=" ">username:</label>
+    <input type="text"  id="user_name"  name="username"  autofocus  autocomplete="off" placeholder="enter in caps" > 
+    <!-- autofocus is specify the focus in the input field   ? -->
+    <!-- required is specify the inside  in  the input field -->
+    <br><br>
+    <label for="">first Name:
+        <input type="text"  name="First_Name "  id="First_Name" disabled>
+        <br><br>
+    </label>
+    <label for="">Gender:</label>
+    <input type="radio"  name="gender"   id="gender"  value="male"> male
+    <input type="radio"  name="gender"   id="gender" value="female">Female
+     <br><br>
+     <label for="dob">DOB:</label>
+     <input type="date" id="dob"  max="2023-06-27"  min="2000-06-27">
+     <!-- max specify the upto current date
+        min specify the what we need previouss to current date? -->
+     <br><br>
+     <label for="">age</label>
+     <input type="number" name="age" id="age "   max="60">
+     <br><br>
+     <label for="">country</label>
+     <input type="india" name="india"  id="india" value="india" readonly >
+     <br><br>
+     <label for="">pincode:</label>
+     <input type="text" name=""  id="" pattern="[A-Z a-z 0-9]{6}">
+     <!-- pattern is sprcify the both 6 uppercase alphabets lowercase alphabets and  and   6 numbers 
+    we can specify [*$%]-->
+     <br><br>
+     <label for="">Resume</label>
+     <input type="file"  name="Resume"  id="Resume">
+     <br><br>
+     <label for="email">Email:</label>
+     <input type="email"    name="email_id" id="email"  autocomplete="on" >
+     <!-- autocomplete is  specify the  both form and input from the suggestions   -->
+     <br><br>
+     <label for="password">password:</label>
+     <input type="password" name="password"  id="password">
+     <br><br>
+     <label for="">Contact number</label>
+     <input type="tel"  name="Contact_number"  id="contact_number" minlength="6"  maxlength="10">
+     <br><br>
+     <label for="">skills:</label>
+     <input type="checkbox" name="skills" id="skills" value="java" >java
+     <input type="checkbox" name="skills"  id="skills"  value="python">python
+     <input type="checkbox" name="skills" id="skills"  value="perl">perl
+     <input type="checkbox"  name="skills" id="skills" value="ruby">ruby
+     <br><br>
+     <input type="Reset" value="Reset">
+     
+
+
+    <input type="submit"  value="Go">
+</fieldset>
+</form>
+</body>
+</html> 
